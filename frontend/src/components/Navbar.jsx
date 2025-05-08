@@ -16,8 +16,9 @@ export const Navbar = () => {
   };
 
   const goToAdminPanel = () => {
-    window.open("http://localhost:5174", "_blank");
-  };
+  window.open("https://cure-connect-a471.vercel.app", "_blank");
+};
+
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
