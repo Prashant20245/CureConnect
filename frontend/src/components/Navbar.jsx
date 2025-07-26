@@ -13,12 +13,16 @@ export const Navbar = () => {
   const logout = () => {
     setToken(false);
     localStorage.removeItem("token");
+    navigate("/");
   };
 
+  // const goToAdminPanel = () => {
+  //   window.open("https://cure-connect-a471.vercel.app", "_blank");
+  // };
   const goToAdminPanel = () => {
-  window.open("https://cure-connect-a471.vercel.app", "_blank");
-};
-
+    const adminPanelUrl = import.meta.env.VITE_ADMIN_PANEL_URL;
+    window.open(adminPanelUrl, "_blank");
+  };
 
   return (
     <div className="flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400">
