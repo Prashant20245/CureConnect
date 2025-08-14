@@ -15,8 +15,8 @@ connectCloudinary();
 
 //middlewares
 app.use(express.json());
-const allowedOrigins = ["http://localhost:5173", "http://localhost:5174", "https://cure-connect-ten.vercel.app",  
-  "https://cureconnect-admin.vercel.app" ];
+const allowedOrigins = ["http://localhost:5173", "http://localhost:5174", "https://cure-connect-ten.vercel.app,  
+  "https://cure-connect-admin.vercel.app" ];
 
 app.use(
   cors({
